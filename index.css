@@ -1,0 +1,291 @@
+/*==================body==========================*/
+
+* {
+    font-family: Roboto, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background-image: url(blog.jpg);
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+button:nth-child(1) {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.bip {
+    margin-left: 565px;
+    border: white solid 1px
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: white
+}
+
+nav p {
+    margin-top: 250px;
+    margin-left: 200px;
+    font-size: 50px;
+    color: white;
+}
+
+nav p:nth-child(3) {
+    font-size: 25px;
+    margin-left: 550px;
+    margin-top: -10px
+}
+
+nav a:nth-child(1) {
+    color: rgb(163, 6, 6);
+    font-size: 29px;
+}
+
+#sideright {
+    margin-left: 450px;
+}
+
+
+/*=========================second page============================*/
+
+#second {
+    color: black;
+    text-align: right;
+    margin: 10px;
+    padding: 10px
+}
+
+#second h1 {
+    font-size: 33px;
+    color: rgb(75, 72, 72);
+    text-align: center;
+    margin: 20px;
+}
+
+#second p {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#second img {
+    width: 65%;
+    margin-right: 250px;
+    height: 500px;
+}
+
+
+/*=======================thrird page=======================*/
+
+#third {
+    background-color: rgb(240, 236, 236);
+    height: 100%;
+    padding: 20px;
+}
+
+#third h1 {
+    color: rgb(75, 72, 72);
+    text-align: center;
+    margin: 20px;
+}
+
+#third p {
+    font-size: 16px
+}
+
+#third button {
+    margin-left: 800px;
+    margin-top: -150px;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/*====================== forth page================*/
+
+#forth {
+    height: 100%;
+    padding: 20px;
+}
+
+#forth h1,
+h2,
+p {
+    text-align: left;
+    display: flex;
+}
+
+#forth h1 {
+    font-weight: bold;
+}
+
+#forth h2,
+p {
+    font-weight: lighter;
+    color: rgb(80, 79, 79);
+}
+
+#forth p {
+    text-align: right;
+    font-size: 18px;
+}
+
+#forth button {
+    margin-top: -250px;
+    margin-left: 150px;
+}
+
+
+/*===================fifth======================*/
+
+#box {
+    background-color: rgb(231, 229, 229);
+    height: 100%;
+    padding: 20px;
+}
+
+#box h1,
+p {
+    text-align: center;
+    margin: 20px
+}
+
+#box img {
+    margin-left: 100px;
+}
+
+#box p {
+    margin-top: 10px;
+    text-align: left;
+}
+
+#box .flex {
+    margin-top: 150px;
+}
+
+#box button {
+    margin-left: 600px;
+}
+
+
+/*==================footer========================*/
+
+footer {
+    background-color: rgb(46, 45, 45);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+    padding: 20px;
+}
+
+footer p {
+    color: white;
+    text-align: left;
+}
+
+footer h2 {
+    margin-left: 15px;
+}
+
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    background-color: rgb(179, 14, 14);
+    color: white;
+    margin: 10px;
+    border: none;
+}
+
+
+/*===============================Media quaries=================*/
+
+@media(max-width:1350px) {
+    nav button {
+        display: none
+    }
+    #forth img {
+        margin-left: 15%;
+        margin-bottom: 0%;
+    }
+    #third button {
+        margin-top: 2px;
+        margin-left: 350px;
+    }
+    #forth button {
+        margin-top: -456px;
+        margin-left: 40%;
+    }
+    #box button {
+        margin-left: 42%
+    }
+}
+
+@media (max-width:992px) {
+    nav a {
+        display: inherit;
+    }
+    nav button {
+        display: none
+    }
+    nav p {
+        margin-left: 10%;
+    }
+    nav p:nth-child(3) {
+        margin-left: 40%;
+    }
+    #second img {
+        margin-right: 15%;
+    }
+    #third {
+        height: 110%
+    }
+    #third .flex {
+        display: block;
+    }
+    #third img {
+        margin-left: 10%;
+    }
+    #third button {
+        margin-left: 40%
+    }
+    #forth .flex {
+        display: block;
+    }
+    #forth h1,
+    h2 {
+        margin-left: 30%;
+    }
+    #box .flex {
+        display: block;
+    }
+    #box {
+        height: 170%
+    }
+    #box img {
+        margin-left: 40%
+    }
+    #forth {
+        height: 115%
+    }
+    footer {
+        margin-bottom: 0px;
+    }
+}
